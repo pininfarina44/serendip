@@ -3,37 +3,28 @@
 
 
 }
-.main-container {
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
 
-}
 .logo{
   width: 40%;
   height: 120px;
+  min-width: 250px;
 
   float: left;
-  background-image: url("images/logo.png");
+  background-image: url("images/logo173.png");
 
   background-position: center;
   background-repeat: no-repeat;
 
-
 }
 
 .nav{
-  width:55%;
+  width:60%;
   height: 120px;
-  min-width: 1000px;
   margin-top: 25px;
   overflow: hidden;
   text-align: center;
   line-height: 140px;
-  padding-left: 200px;
+  padding-left: 10px;
 }
 
 .nav a{
