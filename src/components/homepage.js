@@ -1,8 +1,7 @@
-import React from 'react'
-
+import React from "react";
 
 class Homepage extends React.Component {
-  render () {
+  render() {
     return (
       <div className="homepage">
         <p>Content</p>
