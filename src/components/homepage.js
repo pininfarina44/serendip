@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import CCarousel from "./carousel/ccarousel.js";
 
 class Homepage extends React.Component {
-  render () {
+  render() {
     return (
-      <div>
-        <div className="bg-image"></div>
-        <div className="text-container">Serendip Herbals</div>
+      <div className="homepage">
+        <CCarousel />
       </div>
     );
   }
