@@ -2,80 +2,74 @@ import React from "react";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import RBCarousel from "react-bootstrap-carousel";
 
-const styles = { height: 400, width: "100%" };
-
 class CCarousel extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      autoplay: true
+      autoplay: true,
+      indicators: false
     };
   }
-  onSelect = (active, direction) => {
-    console.log(`active=${active} && direction=${direction}`);
-  };
-  visiableOnSelect = active => {
-    console.log(`visiable onSelect active=${active}`);
-  };
-  slideNext = () => {
-    this.slider.slideNext();
-  };
-  slidePrev = () => {
-    this.slider.slidePrev();
-  };
-  goToSlide = () => {
-    this.slider.goToSlide(4);
-  };
-  autoplay = () => {
-    this.setState({ autoplay: !this.state.autoplay });
-  };
-  _changeIcon = () => {
-    let { leftIcon, rightIcon } = this.state;
-    leftIcon = leftIcon ? undefined : <span className="fa fa-glass" />;
-    rightIcon = rightIcon ? undefined : <span className="fa fa-music" />;
-    this.setState({ leftIcon, rightIcon });
-  };
+
   render() {
-    let { leftIcon, rightIcon } = this.state;
     return (
       <div className="container-fluid">
         <Row>
-
-          <Col span={12} style={{ paddingTop: "20px" }}>
+          <Col span={12} style={{ paddingTop: "10px" }}>
             <RBCarousel
-              animation={true}
-              autoplay={this.state.autoplay}
-              slideshowSpeed={4000}
-              leftIcon={leftIcon}
-              rightIcon={rightIcon}
-              onSelect={this.onSelect}
-              ref={r => (this.slider = r)}
               version={4}
+              indicators={false}
+              className="carousel-fade"
             >
-              <div style={{ height: 400 }}>
+              <div style={{ height: 350 }}>
                 <img
-                  style={{ width: "100%", height: "100%" }}
-                  src="src/images/bg1.jpg"
-                  alt="sh"
+                  style={{ width: "100%", height: "250px" }}
+                  src={require("./carousel-images/moringa.png")}
+                  alt="moringa"
                 />
-                <div className="carousel-caption">Image</div>
+                <div className="carousel-caption text-dark font-weight-bold">
+                  Moringa
+                </div>
               </div>
-              <div style={{ ...styles, backgroundColor: "aqua" }}>
-                <video className="carousel-center" controls style={{ width: "75%" }} height="250">
-                  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                </video>
-                <div className="carousel-caption">Video</div>
+              <div style={{ height: 350 }}>
+                <img
+                  style={{ width: "100%", height: "250px" }}
+                  src={require("./carousel-images/garcinia.png")}
+                  alt="garcinia"
+                />
+                <div className="carousel-caption text-dark font-weight-bold">
+                  Garcinia
+                </div>
               </div>
-              <div style={{ height: 400, width: "100%", backgroundColor: "lightpink" }}>
-                <div className="carousel-center">center Text</div>
-                <div className="carousel-caption">Text</div>
+              <div style={{ height: 350 }}>
+                <img
+                  style={{ width: "100%", height: "250px" }}
+                  src={require("./carousel-images/gotu_kola.png")}
+                  alt="gotu kola"
+                />
+                <div className="carousel-caption text-dark font-weight-bold">
+                  Gotu Kola
+                </div>
               </div>
-              <div style={{ ...styles, backgroundColor: "lightblue" }}>
-                <span>text</span>
-                <div className="carousel-caption">Text</div>
+              <div style={{ height: 350 }}>
+                <img
+                  style={{ width: "100%", height: "250px" }}
+                  src={require("./carousel-images/cinnamon.png")}
+                  alt="cinnamon"
+                />
+                <div className="carousel-caption text-dark font-weight-bold">
+                  Cinnamon
+                </div>
               </div>
-              <div style={{ ...styles, backgroundColor: "lightblue" }}>
-                <div className="carousel-caption">Youtube</div>
+              <div style={{ height: 350 }}>
+                <img
+                  style={{ width: "100%", height: "250px" }}
+                  src={require("./carousel-images/senna.png")}
+                  alt="senna"
+                />
+                <div className="carousel-caption text-dark font-weight-bold">
+                  Senna
+                </div>
               </div>
             </RBCarousel>
           </Col>
