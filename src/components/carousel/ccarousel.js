@@ -13,7 +13,7 @@ class CCarousel extends React.PureComponent {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="carousel-container container-fluid">
         <Row>
           <Col span={12} style={{ paddingTop: "10px" }}>
             <RBCarousel
@@ -21,50 +21,50 @@ class CCarousel extends React.PureComponent {
               indicators={false}
               className="carousel-fade"
             >
-              <div style={{ height: 350 }}>
+              <div>
                 <img
-                  style={{ width: "100%", height: "250px" }}
-                  src={require("./carousel-images/moringa.png")}
+                  className="carousel-img"
+                  src={require("./carousel-images/moringa.jpg")}
                   alt="moringa"
                 />
                 <div className="carousel-caption text-dark font-weight-bold">
                   Moringa
                 </div>
               </div>
-              <div style={{ height: 350 }}>
+              <div>
                 <img
-                  style={{ width: "100%", height: "250px" }}
-                  src={require("./carousel-images/garcinia.png")}
+                  className="carousel-img"
+                  src={require("./carousel-images/garcinia.jpg")}
                   alt="garcinia"
                 />
                 <div className="carousel-caption text-dark font-weight-bold">
                   Garcinia
                 </div>
               </div>
-              <div style={{ height: 350 }}>
+              <div>
                 <img
-                  style={{ width: "100%", height: "250px" }}
-                  src={require("./carousel-images/gotu_kola.png")}
+                  className="carousel-img"
+                  src={require("./carousel-images/gotu_kola.jpg")}
                   alt="gotu kola"
                 />
                 <div className="carousel-caption text-dark font-weight-bold">
                   Gotu Kola
                 </div>
               </div>
-              <div style={{ height: 350 }}>
+              <div>
                 <img
-                  style={{ width: "100%", height: "250px" }}
-                  src={require("./carousel-images/cinnamon.png")}
+                  className="carousel-img"
+                  src={require("./carousel-images/cinnamon.jpg")}
                   alt="cinnamon"
                 />
                 <div className="carousel-caption text-dark font-weight-bold">
                   Cinnamon
                 </div>
               </div>
-              <div style={{ height: 350 }}>
+              <div>
                 <img
-                  style={{ width: "100%", height: "250px" }}
-                  src={require("./carousel-images/senna.png")}
+                  className="carousel-img"
+                  src={require("./carousel-images/senna.jpg")}
                   alt="senna"
                 />
                 <div className="carousel-caption text-dark font-weight-bold">
