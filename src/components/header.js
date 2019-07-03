@@ -4,10 +4,8 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isToggleOn: true };
-    //binding
     this.toggleMenu = this.toggleMenu.bind(this);
   }
-  //toggle menu state for smaller devices
   toggleMenu = () => {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn

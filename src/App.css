@@ -2,6 +2,7 @@ body {
   font-family: Arial, Halvetica, sans-serif;
   height: 100%;
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 #root {
@@ -143,7 +144,7 @@ a:active {
 }
 
 .about-upper {
-  margin: 0 auto;
+
 }
 .about-upper > * {
   color: black;
@@ -160,42 +161,87 @@ a:active {
   max-width: 380px;
   max-height: 100%;
 }
-.about-upper-headline{
-  margin: 0 auto;
 
+.about-upper-headline > h3{
+  max-width: 380px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .about-upper > article {
+  margin: 0 auto;
+  max-width: 380px;
+}
+.about-upper-products{
+  margin: 0 auto;
   max-width: 380px;
 }
 
 /* About Lower */
 .about-lower {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  width: 100%;
+
+
 }
 .bullet-points{
-  float: left;
-  max-height: 220px;
-  height: 120px;
-  min-width: 250px;
   background-color: #efefef;
+  margin: 4px;
+  text-align: center;
+  width: 100%;
+  height: 115px;
 
 }
 .bullet-points > h4{
-  font-size: 6.5em;
-  color: #afafaf;
+  font-size: 6em;
+  color: #2f2f2f;
+  opacity: 0.3;
 
 }
 .bullet-points > span {
   position: relative;
-  top:-90px;
-  font-size: 1.6em;
+  top:-80px;
+  font-size: 1.3em;
+  font-weight:600;
 
 }
-
 /* End of About Us component styling */
+
+/* Products component styling */
+.products-page{
+  margin-top: 20px;
+
+}
+.product-section{
+  border: 2px solid #c7c7c7;
+  padding: 15px;
+  margin-top: 20px;
+
+}
+.product-img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 380px;
+  border: 1px solid #000;
+}
+.product-img > img {
+  width: 100%;
+  max-width: 380px;
+  max-height: 100%;
+}
+
+.product-headline > h3{
+  max-width: 380px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.product-section > article {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+
+
+/* End of Products component styling */
 
 /* Footer component styling */
 .footer {
@@ -257,9 +303,7 @@ a:active {
   }
 
   .about-img {
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 50px;
     max-width: 250px;
     border: 1px solid #000;
     float: right;
@@ -271,9 +315,46 @@ a:active {
     max-height: 100%;
 
   }
+  .about-upper-headline > h3{
+    margin: 0;
+  }
   .about-upper > article {
     max-width: 100%;
   }
+  .about-upper-products{
+    max-width: 100%;
+  }
+  /* About Lower */
+  .about-lower {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #efefef;
+  }
+  .bullet-points{
+    margin: 4px;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 110px;
+
+  }
+  .bullet-points > h4{
+    font-size: 6em;
+    color: #2f2f2f;
+    opacity: 0.3;
+
+  }
+  .bullet-points > span {
+    position: relative;
+    top:-95px;
+    font-size: 1.3em;
+    font-weight:600;
+
+  }
+
+
 }
 @media only screen and (min-width: 734px) {
   .header {
@@ -289,10 +370,9 @@ a:active {
     grid-column: 1/2;
     height: 130px;
     min-width: 173px;
-    justify-content: flex-start;
     background-image: url("images/logo173.png");
 
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
   }
   .nav {
@@ -302,13 +382,13 @@ a:active {
     grid-gap: 0em;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: 1fr;
-    justify-content: center;
+    justify-content:flex-end;
     opacity: 1;
   }
 
   .nav a {
     text-decoration: none;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
     border-bottom: none;
   }
@@ -337,6 +417,46 @@ a:active {
     font-size: 1.8rem;
     margin-top: 3rem;
   }
+  .product-section{
+    border: 2px solid #c7c7c7;
+    padding: 15px;
+    max-width: 800px;
+  }
+  .product-img {
+    margin: 10px;
+    margin-top: 30px;
+    max-width: 300px;
+    border: 1px solid #000;
+    float: right;
+  }
+  .product-img > img {
+    width: 100%;
+    max-width: 380px;
+    max-height: 100%;
+
+  }
+  .product-section:nth-of-type(even)> .product-img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .product-headline > h3{
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .product-section:nth-of-type(even) > .product-headline> h3 {
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .product-section > article {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
 }
 @media only screen and (min-width: 820px) {
   .homepage > h1 {
@@ -355,9 +475,7 @@ a:active {
     margin-top: 3rem;
   }
   .about-img {
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 50px;
     max-width: 300px;
     border: 1px solid #000;
     float: right;
@@ -371,6 +489,17 @@ a:active {
   }
   .about-upper > article {
     max-width: 100%;
+  }
+  .bullet-points{
+    width: 120px;
+  }
+  .bullet-points > span {
+    top:-110px;
+    font-size: 1.7em;
+
+  }
+  .product-section{
+    max-width: 1000px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -390,11 +519,11 @@ a:active {
     margin-top: 3rem;
   }
   .about-upper{
-    width: 80%;
+    margin-top: 30px;
+    width: 100%;
   }
   .about-img {
-    margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 30px;
     max-width: 380px;
     border: 1px solid #000;
@@ -407,9 +536,35 @@ a:active {
     max-height: 100%;
 
   }
+  .about-lower{
+    height: 140px;
+  }
+  .bullet-points{
+    width: 160px;
+  }
+  .bullet-points > h4{
+    font-size: 7em;
+    color: #2f2f2f;
+    opacity: 0.3;
+  }
   .about-upper > article {
     max-width: 100%;
   }
+  .products-page{
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  .product-section{
+    height: 300px;
+    max-width: 1100px;
+  }
+  .product-img {
+    margin: 10px;
+    margin-top: 20px;
+    max-width: 350px;
+  }
+
+
 }
 @media only screen and (min-width: 1238px) {
   .logo {
@@ -441,6 +596,61 @@ a:active {
     margin-top: 3rem;
   }
   .about-upper{
-    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 75%;
   }
+  .about-lower{
+    height: 140px;
+  }
+  .bullet-points{
+    width: 190px;
+  }
+  .bullet-points > h4{
+    font-size: 7em;
+    color: #2f2f2f;
+    opacity: 0.3;
+  }
+  .about-upper > article {
+    max-width: 100%;
+  }
+  .bullet-points > span {
+    top:-120px;
+    font-size: 1.8em;
+
+  }
+  .product-section{
+    height: 320px;
+  }
+
+  .product-img {
+    margin: 10px;
+    margin-top: 20px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+}
+@media only screen and (min-width: 1500px) {
+  .about-lower{
+    height: 150px;
+  }
+  .bullet-points{
+    width: 230px;
+  }
+  .bullet-points > h4{
+    font-size: 7.7em;
+    color: #2f2f2f;
+    opacity: 0.3;
+  }
+  .about-upper > article {
+    max-width: 100%;
+  }
+  .bullet-points > span {
+    top:-140px;
+    font-size: 2.2em;
+
+  }
+
 }
