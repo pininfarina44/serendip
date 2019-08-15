@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "./form.js"
+//import Form from "./form.js"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class Contact extends React.Component {
       <div className="contact">
 
         <div className="upper-contact">
-          <Form />
+
         </div>
         <div className="lower-contact">
           <h2>Serendip Herbals</h2>

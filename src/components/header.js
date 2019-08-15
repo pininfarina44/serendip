@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props) {
@@ -14,14 +15,13 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-
-          <div className="logo" />
-          <div onClick={this.toggleMenu} className="menu-button" />
+        <div className="logo" />
+        <div onClick={this.toggleMenu} className="menu-button" />
           <nav className={this.state.isToggleOn ? "nav off" : "nav on"}>
-            <a href="/index.html">Home</a>
-            <a href="/index.html">About Us</a>
-            <a href="/index.html">Products</a>
-            <a href="/index.html">Contact Us</a>
+            <Link exact to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/contact">Contact Us</Link>
           </nav>
       </div>
     );

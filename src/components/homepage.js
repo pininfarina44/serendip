@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Homepage extends React.Component {
   render() {
@@ -10,8 +11,9 @@ class Homepage extends React.Component {
               Explore our quality natural selection of herbals
               exported from Sri Lanka
             </p>
-            <a href="#products">Browse Products</a>
-          </article>
+            </article>
+            <Link to="/products">Browse Products</Link>
+
       </div>
     );
   }
