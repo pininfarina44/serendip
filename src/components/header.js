@@ -19,8 +19,9 @@ class Header extends React.Component {
         <div onClick={this.toggleMenu} className="menu-button" />
           <nav className={this.state.isToggleOn ? "nav off" : "nav on"}>
             <Link exact to="/">Home</Link>
-            <Link to="/about">About Us</Link>
             <Link to="/products">Products</Link>
+            <Link to="/about">We Offer</Link>
+            <Link to="/leadership">About Us</Link>
             <Link to="/contact">Contact Us</Link>
           </nav>
       </div>

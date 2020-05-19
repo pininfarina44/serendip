@@ -12,13 +12,13 @@ class About extends React.Component {
             />
           </figure>
           <div className="about-upper-headline">
-            <h3>About Us</h3>
+            <h3>We Offer</h3>
           </div>
           <article>
             <p>
               Serendip Herbals is a leading exporter of certified, premium
               quality, natural herbals to customers worldwide. Our mission is to
-              provide our customers therapeutic products that enhance their
+              provide our customers therapeutic products that enhance
               health and quality of life.
             </p>
           </article>
@@ -31,9 +31,11 @@ class About extends React.Component {
               <li>Cinnamon</li>
               <li>Gotu Kola</li>
             </ul>
-            <p>We pride ourselves in providing our customers</p>
           </div>
         </section>
+        <div className="above-lower">
+          <h2>We pride ourselves in providing our customers</h2>
+        </div>
         <section className="about-lower">
           <div className="bullet-points">
             <h4>1</h4>

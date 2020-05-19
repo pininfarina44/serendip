@@ -32,21 +32,21 @@ class Contact extends React.Component {
         </div>
         <div className="lower-contact">
           <h2>Serendip Herbals</h2>
-          <h5>Sri Lanka:</h5>
+          {/*<h5>Sri Lanka:</h5>
           <address>
             35/6 Chapel Lane
             <br />
             Colombo, Sri Lanka
-          </address>
+          </address>*/}
           <h5>US Branch:</h5>
           <address>
-            PO Box 7961
+            11572 Nelson Street
             <br />
-            Redlands, CA 92375
+            Loma Linda, CA 92354
           </address>
-          <a href="tel:18003534600">Phone: 1-800-353-4600</a>
+          <a href="tel:19096548812">Phone: 1-909-654-8812</a>
           <br />
-          <a href="mailto:berkaysurmeli@hotmail.com">sue@serendipherbals.com</a>
+          <a href="mailto:inquiry@serendipherbals.com">inquiry@serendipherbals.com</a>
         </div>
       </div>
     );
